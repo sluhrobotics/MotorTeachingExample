@@ -16,4 +16,12 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+  public static class KrackenConstants {
+    public static final double kLowPosition = 5;
+    public static final double kPositionInterval = 1;
+  }
+  public static class NeoConstants {
+    public static final double kForwardSpeed = 0.3;
+    public static final double kBackwardSpeed = -0.1;
+  }
 }

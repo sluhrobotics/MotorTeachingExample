@@ -44,10 +44,17 @@ public class KrackenPosition {
         m_posMotorFx.setPosition(0);
     }   
 
-    public void setPosition(double positionInterval) {
+    public void setPositionInterval(double positionInterval) {
+
         motorRotations += positionInterval;
         // ADD SOFT STOP FOR SAFETY
 
         m_posMotorFx.setControl(m_posVoltage.withPosition(motorRotations));
+    }
+
+    public void setAbsolutePosition(double absoluteRotations) {
+        
+        // ADD SOFT STOP FOR SAFETY
+        m_posMotorFx.setControl(m_posVoltage.withPosition(absoluteRotations));
     }
 }
