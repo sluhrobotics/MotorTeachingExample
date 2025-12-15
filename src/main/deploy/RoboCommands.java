@@ -10,8 +10,8 @@ import frc.robot.Constants;
 public class RoboCommands {
 // The robots commands are defined here and then sent to robot container to bind buttons
 
-     public static final Command setKrackenLowGoal = new InstantCommand(
-        () -> RobotContainer.m_KrackenPositionSubsystem.setAbsolutePosition(Constants.KrackenConstants.kLowPosition), RobotContainer.m_KrackenPositionSubsystem);
-
-
+        public static final Command setKrackenLowGoal = new InstantCommand(
+                () -> RobotContainer.m_KrackenPositionSubsystem.setAbsolutePosition(Constants.KrackenConstants.kLowPosition), RobotContainer.m_KrackenPositionSubsystem);
+        public static final Command rollNeo = new InstantCommand(
+                () -> RobotContainer.m_NeoRollerSubystem.runRoller(Constants.NeoConstants.kForwardSpeed), RobotContainer.m_NeoRollerSubystem);
 }
