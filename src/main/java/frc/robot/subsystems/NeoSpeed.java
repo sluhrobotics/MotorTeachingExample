@@ -12,7 +12,7 @@ public class NeoSpeed {
 
     public NeoSpeed() {
         
-        m_rollingMotor.setCANTimeout(300);
+    m_rollingMotor.setCANTimeout(300);
 
     SparkMaxConfig rollerConfig = new SparkMaxConfig();
     rollerConfig.voltageCompensation(10);
