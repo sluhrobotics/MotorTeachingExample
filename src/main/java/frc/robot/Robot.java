@@ -8,7 +8,6 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import frc.robot.commands.RoboCommands;
-import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.KrackenPosition;
 import frc.robot.subsystems.NeoSpeed;
 
@@ -19,7 +18,6 @@ import frc.robot.subsystems.NeoSpeed;
  */
 public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
-  public static ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   public static NeoSpeed neo = new NeoSpeed();
   public static KrackenPosition kracken = new KrackenPosition();
   

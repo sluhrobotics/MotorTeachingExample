@@ -5,7 +5,6 @@
 package frc.robot;
 
 import frc.robot.Constants.OperatorConstants;
-import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.KrackenPosition;
 import frc.robot.subsystems.NeoSpeed;
 import edu.wpi.first.wpilibj.XboxController;
@@ -23,7 +22,6 @@ import frc.robot.commands.RoboCommands;
  */
 public class RobotContainer {
   // The robot's subsystems and buttons are defined here...
-  public static ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
   public static NeoSpeed neo = new NeoSpeed();
   public static KrackenPosition kracken = new KrackenPosition();
   
